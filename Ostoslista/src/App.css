@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #70a571;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+div {
+  margin: 1rem;
+}
+
+button {
+  background-color: #715062;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #69856a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  color: white;
+  background-color: rgb(119, 119, 193);
+  cursor: pointer;
+  text-align: center;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(74, 54, 30);
+}
+
+li:hover {
+  background-color: #7a6ea7; 
+}
