@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+.tyyli1 {
+  color: #333;
+  background: #e3f2fd;
+}
+
+.tyyli2 {
+  color: #333;
+  background: #fce4ec;
+}
