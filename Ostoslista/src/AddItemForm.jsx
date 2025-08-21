@@ -1,27 +1,28 @@
-import * as React from 'react';
+import { useState, useContext } from "react";
+import { CartContext } from "./CartContext.jsx";
 
-function AddItemForm({ onAddItem }) {
-  const [inputValue, setInputValue] = React.useState("");
+const AddItemForm = () => {
+  const [input, setInput] = useState("");
+  const { addItem } = useContext(CartContext);
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); 
-    if (inputValue.trim()) {
-      onAddItem(inputValue); 
-      setInputValue(""); 
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (input.trim()) {
+      addItem(input.trim());
+      setInput("");
+    } 
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Add new purchase"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Lisää tuote"
       />
-      <button type="submit">Submit</button>
+      <button type="submit">Lisää</button>
     </form>
   );
-}
+};
 
 export default AddItemForm;

@@ -1,6 +1,6 @@
 import React from "react";
-import { CartProvider } from "./CartContext";
-import Ostoslista from "./Ostoslista";
+import { CartProvider } from "./CartContext.jsx";
+import Ostoslista from "./Ostoslista.jsx";
 
 function App() {
   return (

@@ -1,25 +1,24 @@
 import * as React from 'react';
+import { useContext } from "react";
 import AddItemForm from './AddItemForm.jsx';
-import ItemList from './ItemList.jsx';
+import { CartContext } from "./CartContext.jsx";
 
 function ShoppingList() {
-  const testi = ["Chocolate", "Milk", "Biscuits"]; 
-  const [items, setItems] = React.useState(testi);
-
-  const addItem = (newItem) => {
-    setItems([...items, newItem]);
-  };
-
-  const removeItem = (itemToRemove) => {
-    setItems(items.filter(item => item !== itemToRemove));
-  };
+  const { items, removeItem } = useContext(CartContext);
 
   return (
     <div>
-      <AddItemForm onAddItem={addItem} />
-      <ItemList items={items} onRemoveItem={removeItem} />
+      <AddItemForm />
+      <ul>
+        {items.map((item, idx) => (
+          <li key={idx}>
+            {item}
+            <button onClick={() => removeItem(idx)}>Poista</button>
+          </li>
+        ))}
+      </ul>
     </div>
-  );
+  ); 
 }
 
 export default ShoppingList;
