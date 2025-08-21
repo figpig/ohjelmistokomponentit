@@ -10,7 +10,7 @@ function ItemList({ items = [], onRemoveItem }) {
           </li>
         ))
       ) : (
-        <li>Ei ostoksia</li>
+        <li>No purchases</li>
       )}
     </ul>
   );

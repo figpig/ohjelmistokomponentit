@@ -3,7 +3,7 @@ import * as React from 'react';
 function Header() {
   return (
     <header>
-      <h1>Ostoslista</h1>
+      <h1>Shopping list</h1>
     </header>
   );
 }

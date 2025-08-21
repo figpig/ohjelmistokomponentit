@@ -17,9 +17,9 @@ function AddItemForm({ onAddItem }) {
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Lisää uusi ostos"
+        placeholder="Add new purchase"
       />
-      <button type="submit">Lähetä</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }

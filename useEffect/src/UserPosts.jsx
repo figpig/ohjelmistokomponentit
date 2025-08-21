@@ -3,7 +3,7 @@ import React from 'react';
 function UserPosts({ userPosts }) {
   return (
     <div>
-      <h2>Käyttäjän postaukset</h2>
+      <h2>Users posts</h2>
       <ul>
         {userPosts.map((post) => (
           <li key={post.id}>{post.title}</li>

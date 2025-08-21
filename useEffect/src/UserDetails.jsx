@@ -1,15 +1,15 @@
 import React from 'react';
 
 function UserDetails({ userDetails }) {
-  if (!userDetails) return null; // Ei näytetä mitään, jos käyttäjä tietoja ei ole
+  if (!userDetails) return null; 
   
 
   return (
     <div>
-      <h2>Käyttäjän tiedot</h2>
-      <p><strong>Nimi:</strong> {userDetails.name}</p>
-      <p><strong>Sähköposti:</strong> {userDetails.email}</p>
-      <p><strong>Kaupunki:</strong> {userDetails.address.city}</p>
+      <h2>User info</h2>
+      <p><strong>Name:</strong> {userDetails.name}</p>
+      <p><strong>Email:</strong> {userDetails.email}</p>
+      <p><strong>City:</strong> {userDetails.address.city}</p>
     </div>
   );
 }

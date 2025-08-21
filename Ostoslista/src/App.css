@@ -1,31 +1,29 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
   background-color: #f9f9f9;
 }
 
 header {
-  background-color: #4caf87;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  text-align: left;
 }
 
 div {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 button {
-  background-color: #54af4c;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a098;
+  background-color: #9793b3;
 }
 
 ul {
@@ -34,18 +32,18 @@ ul {
 }
 
 li {
-  padding: 0.5rem;
+  padding: 0.9rem;
   margin: 0.5rem 0;
   color: white;
-  background-color: rgb(204, 0, 255);
+  background-color: rgb(72, 255, 0);
   cursor: pointer;
-  text-align: center;
+  text-align: left;
 }
 
 li:nth-child(odd) {
-  background-color: rgb(221, 0, 255);
+  background-color: rgb(72, 255, 0);
 }
 
 li:hover {
-  background-color: #3700ff; 
+  background-color: #000000;
 }
